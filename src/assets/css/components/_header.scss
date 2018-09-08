@@ -1,0 +1,15 @@
+header {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    z-index: 3;
+  }
+  
+  .header__logo {
+    align-self: flex-start;
+    height: 10rem;
+  }
+
+  
+  

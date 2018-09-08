@@ -1,0 +1,135 @@
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.carousel-caption {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start;
+  top: 50rem;
+  color: #707070;
+  
+
+
+  &__slide-num {
+    font-size: 3rem;
+    font-weight: 100 !important;
+  }
+
+  &__slide-heading {
+    margin: -3rem 0 -4rem 0;
+
+    font-size: 8rem;
+    font-weight: bold;
+  }
+
+  &__slide-sub-heading {
+    font-size: 5rem;
+    font-weight: 300;
+  }
+
+}
+
+.carousel-indicators {
+  display: flex !important;
+  // flex-direction: column;
+  align-self: flex-start;
+  
+  // padding: 1rem;
+
+  & ol {
+    
+  }
+
+  & li {
+    align-items: flex-start;
+    margin: 10px;
+  }
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  height: 60rem;
+
+  &-logo {
+    height: 20rem;
+  }
+
+}
+
+.divider2 {
+  background: url('@../../assets/img/divider2.jpg') center center no-repeat;
+  height: 90rem;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-btn {
+    margin-top: 70rem;
+    padding: 1rem 4rem;
+    font-size: 2rem;
+    font-weight: 100;
+    background: #ffffff1a;
+    border: solid 1px #707070;
+    color: #D1D1D1;
+    letter-spacing: .5rem;
+  }
+}
+
+.shop {
+  text-align: center; 
+}
+
+.shop-shoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.shoe {
+  height: 25rem;
+  padding: 2rem;
+}
+
+.men-shoes {
+  background: url('@../../assets/img/men-shoes.jpg');
+  height: 70rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-content {
+    margin-left: 60rem;
+  }
+}
+
+.newsletter {
+  background-color: #D1D1D1;
+  height: 20rem;
+
+  &-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+
+
+}

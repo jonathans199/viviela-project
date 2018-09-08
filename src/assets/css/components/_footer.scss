@@ -1,0 +1,20 @@
+footer {
+    // height: 30rem;
+    display: flex;
+    background: #fff;
+    
+
+    ul {
+        display: flex;
+        list-style-type: none;
+    
+        li {
+            margin: 5rem;
+        }
+    }
+
+}
+
+.footer-logo {
+    height: 7rem;
+}

@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+  }
+
+section {
+    margin-bottom: 10rem;
+}
+
+@import '_typography.scss';
+@import '_variables.scss';
+@import 'components/_header.scss';
+@import 'pages/_home.scss';
+@import 'components/_footer.scss';
+@import '_buttons.scss';
