@@ -5,9 +5,9 @@
         <img src="@/assets/img/contact.png" class="img-fluid" alt="">
       </div>
       <div class="col-12 col-md-6 contact_form"> 
-        <b-row>
-          <h2 class="col-12 text-center">CONTACT US</h2>
-          <b-form-group class="col-6 contact__form-group"  label-for="elementsAppend" >
+        <div class="container row">
+          <h2 class="col-12 text-center mb-5">CONTACT US</h2>
+          <b-form-group class="col-6 contact__form-group "  label-for="elementsAppend" >
             <b-input-group>
               <b-form-input placeholder="EMAIL"  type="text" ></b-form-input>
             </b-input-group>
@@ -37,7 +37,8 @@
               <b-form-input  type="text" ></b-form-input>
             </b-input-group>
           </b-form-group>
-        </b-row>
+          <h3 class="col-12 text-center mt-5">INFO@VIVIELA.COM / MIAMI </h3>
+        </div>
       </div>
     </div>
   </section>
@@ -52,7 +53,8 @@
   .contact_form input {
     border-radius: 0px;
     height: 45px;
-    border: 0.1px solid black
+    border: 0.1px solid black;
+    background-color: transparent
   }
   .contact_form {
     display: flex;
@@ -60,7 +62,8 @@
     align-items: center;
   }
   .contact__container {
-    margin-bottom: 0px
+    margin-bottom: 0px;
+    background-color: #f4f2f1
   }
 </style>
 
