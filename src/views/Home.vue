@@ -54,26 +54,23 @@
             <button class="btn outline-success divider2-btn">SEE COLLECTIONS</button>
         </section>
 
+
+
+
+
+
         <section class="shop container">
             <h1>SHOP NOW</h1>
             <h2>Subtext</h2>
             <div class="shop-shoes">
-                <img src="@/assets/img/intro-shoe.jpg" alt="" class="shoe">
-                <img src="@/assets/img/intro-shoe.jpg" alt="" class="shoe">
-                <img src="@/assets/img/intro-shoe.jpg" alt="" class="shoe">
-                <img src="@/assets/img/intro-shoe.jpg" alt="" class="shoe">
-                <img src="@/assets/img/intro-shoe.jpg" alt="" class="shoe">
-                <img src="@/assets/img/intro-shoe.jpg" alt="" class="shoe">
-                <img src="@/assets/img/intro-shoe.jpg" alt="" class="shoe">
-                <img src="@/assets/img/intro-shoe.jpg" alt="" class="shoe">
-                <img src="@/assets/img/intro-shoe.jpg" alt="" class="shoe">
-                <img src="@/assets/img/intro-shoe.jpg" alt="" class="shoe">
-                <img src="@/assets/img/intro-shoe.jpg" alt="" class="shoe">
-                <img src="@/assets/img/intro-shoe.jpg" alt="" class="shoe">
-                <img src="@/assets/img/intro-shoe.jpg" alt="" class="shoe">
-                <img src="@/assets/img/intro-shoe.jpg" alt="" class="shoe">
-                <img src="@/assets/img/intro-shoe.jpg" alt="" class="shoe">
-                <img src="@/assets/img/intro-shoe.jpg" alt="" class="shoe">
+							<div v-for="item in products">
+								<h5>{{ item.name }}</h5>
+								<img :src="item.images[0]['thumb']" alt="" class="shoe">
+								<span>{{ item.price }}</span>
+								<p>{{ item.description }} {{ item.stock_status }} {{ item.</p>
+								
+							</div>
+                
             </div>
             <button class="btn vv-button">SHOP MORE</button>
         </section>
@@ -97,9 +94,13 @@
                     <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
                 </form>
             </div>
+
+					
         </section>
 
         <Footer/>
+
+        
   </div>
 </template>
 
@@ -107,14 +108,43 @@
 
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-
+import axios from 'axios'
 
 export default {
   name: 'Home',
   components: {
     Footer,
     Header
+  },
+
+  data () {
+    return{ 
+			info: '',
+			products: [ ]
+
+    }
+  },
+
+  created () {
+      axios
+      .get('https://api.tzuru.com/api/v1/store/7a9e2645-343e-4beb-bbde-d97805ed776d/client/products?column=price&by=desc&publish=true&featured=true&limit=4')
+      .then((response) => {
+        console.log(response)
+        this.products = response.data
+      })
+      .catch(function(error){
+        console.log(error)
+      })
+      // .then((response) => {
+      //     console.log(response.data)
+      //     this.info = response.data['bpi']['USD']['rate']
+      // })
+      // .catch( (error) => {  
+      //   console.log(error)
+
+      // } )
   }
 }
+
 
 </script>
