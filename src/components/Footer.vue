@@ -1,14 +1,43 @@
 <template>
-    <footer class="container">
-        <img class="footer-logo" src="@/assets/img/viviela_logo300px.png" alt="">
-        <ul class="footer-nav">
-            <li>About</li>
-            <li>Shop</li>
-            <li>Collections</li>
-            <li>Contact</li>
-            <li>Facebook</li>
-            <li>Twiter</li>
-            <li>Instagram</li>
-        </ul>
-    </footer>
+  <footer class="footer__container">
+    <div class="container">
+      <div class="row">
+        <div class="col-2 d-flex justify-content-center align-items-center">
+          <img class="footer-logo" src="@/assets/img/viviela_logo300px_w.png" alt="">
+        </div>
+        <div class="col-8">
+          <ul>
+            <li>ABOUT</li>
+            <li>SHOP</li>
+            <li>COLLECTIONS</li>
+          </ul>
+        </div>
+        <div class="col-2 d-flex justify-content-center align-items-center">
+          <span class="mr-4"><i class="fa fa-facebook-square" /></span>
+          <span class="mr-4"><i class="fa fa-instagram" /></span>
+          <span><i class="fa fa-twitter-square" /></span>
+        </div>
+      </div>
+    </div>
+  </footer>
 </template>
+
+<style>
+  .footer__container span{
+    font-size: 2.5rem;
+  }
+
+  .footer__container{
+    background-color: #6a4a54;
+    color: white !important
+  }
+
+  .footer__container ul {
+    font-size: 15px;
+  }
+
+  .footer__container ul li {
+    margin-right: 0px;
+    margin-left: 40px;
+  }
+</style>
