@@ -1,6 +1,5 @@
 <template>
   <section class="contact__container">
-    <div class="row">
       <div class="col-12 col-md-6">
         <img src="@/assets/img/contact.png" class="img-fluid" alt="">
       </div>
@@ -29,22 +28,38 @@
           </b-form-group>
           <b-form-group class="col-6 contact__form-group"  label-for="elementsAppend" >
             <b-input-group>
-              <b-form-input placeholder="GIRL BOY" type="text" ></b-form-input>
+              <b-form-input placeholder="YOUR MESSAGE" type="text" ></b-form-input>
             </b-input-group>
           </b-form-group>
-          <b-form-group class="col-6 contact__form-group" label-for="elementsAppend" >
-            <b-input-group>
-              <b-form-input  type="text" ></b-form-input>
-            </b-input-group>
-          </b-form-group>
+          <div class="col-6 contact__form-group contact__form-submit" label-for="elementsAppend" >
+            <button class="contact__form-button">
+              <span style="flex-grow: 5;">SUBMIT</span>
+              <span class="submit-arrow" style="flex-grow: 1;"><i class="fa fa-arrow-right" /></span>
+            </button>
+          </div>
           <h3 class="col-12 text-center mt-5">INFO@VIVIELA.COM / MIAMI </h3>
         </div>
       </div>
-    </div>
   </section>
 </template>
 
 <style>
+  .submit-arrow {
+    border-left: 0.5px solid black
+  }
+  .contact__form-button {
+    flex: 1;
+    display: flex;
+    color: white;
+    background-color: #70555f;
+    border: 1px solid #70555f;
+    cursor: pointer;
+  }
+  .contact__form-submit {
+    display: flex;
+    justify-content: center;
+  }
+
   .contact__form-group {
     padding-left: 0px;
     padding-right: 0px;
@@ -63,7 +78,9 @@
   }
   .contact__container {
     margin-bottom: 0px;
-    background-color: #f4f2f1
+    background-color: #f4f2f1;
+    display: flex;
+    flex-direction: row
   }
 </style>
 
