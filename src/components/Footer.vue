@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-2 d-flex justify-content-center align-items-center">
-          <img class="footer-logo" src="@/assets/img/viviela_logo300px_w.png" alt="">
+          <img class="footer-logo" src="@/assets/img/viviela_logo300px.png" alt="">
         </div>
         <div class="col-8">
           <ul>
@@ -28,8 +28,8 @@
   }
 
   .footer__container{
-    background-color: #6a4a54;
-    color: white !important
+    background-color: #E2E2E2;
+    color: #000;
   }
 
   .footer__container ul {

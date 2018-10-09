@@ -1,8 +1,9 @@
 'use strict'
 const _ = require('lodash')
 let defaultURL = 'http://localhost:3001/api/v1/store/'
-    // defaultURL = 'https://api.tzuru.com/api/v1/store/'
-let storeUUID = "710d8fe9-fd12-4708-add8-0c53a02465bb"
+    defaultURL = 'https://api.tzuru.com/api/v1/store/'
+let storeUUID = "7a9e2645-343e-4beb-bbde-d97805ed776d"
+
 
 function addToLocalCart(item){
   let qty

@@ -1,0 +1,50 @@
+.shop {
+    text-align: center;
+    height: 100%;
+    padding: 10rem 0;
+  }
+  
+  .shop-shoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10rem 0;
+    
+  }
+  
+  .shoe {
+    height: 25rem;
+
+    & p {
+        font-size: 1rem;
+    }
+  }
+
+.item-name {
+  font-size: 2rem;
+  text-transform: uppercase;
+  position: relative;
+  z-index : 1;
+}
+
+.item-name:before {
+  content : "";
+  position: absolute;
+  left    : 25%;
+  bottom  : 0;
+  width   : 50%; 
+  border-bottom: 1px solid #8F8F8F;
+}
+
+.description {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  color: #8F8F8F;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #8F8F8F;
+}

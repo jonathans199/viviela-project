@@ -1,17 +1,19 @@
 <template>
   <section class="shop container mt-5">
-    <h1>SHOP NOW</h1>
-    <h2>Subtext</h2>
+    <h1>SHOP ALL</h1>
+    <h2>COLLECTIONS</h2>
     <div class="shop-shoes mt-5">
-      <div v-for="item in products">
-        <h5>{{ item.name }}</h5>
+      <div class="shoe" v-for="item in products">
         <img :src="item.images[0]['thumb']" alt="" class="img-fluid">
-        <p>{{ item.price }}</p>
+        <div class="item-name">{{ item.name }}</div>
+        <div class="description">{{ item.description }}</div>
+           <div class="price">${{ item.price }}</div>
         <a v-if="!loaders[item.id]" class="btn btn-primary btn-sm text-white" @click="addToLocalCart(item)">ADD TO CART</a>
         <a v-if="loaders[item.id]" class="btn btn-primary btn-sm text-white" @click="addToLocalCart(item)">Loading <i class="fa fa-spinner fa-spin" /></a>
       </div>
     </div>
-    <button class="btn vv-button mt-5 mb-5">SHOP MORE</button>
+    
+    <button class="btn vv-button mt-5 mb-5">SEE COLLECTION</button>
   </section>
 </template>
 

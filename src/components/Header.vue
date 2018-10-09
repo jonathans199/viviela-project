@@ -37,9 +37,7 @@
                   <b-dropdown-divider></b-dropdown-divider>
                 </li>
               </ul>
-              <button class="navbar__cart-button">
-                CHECKOUT
-              </button>
+              <button class="navbar__cart-button">CHECKOUT</button>
             </b-dropdown>
           </span>
         </ul>
@@ -47,66 +45,6 @@
     </nav>
   </div>
 </template>
-
-<style>
-  .navbar__cart-close i {
-    color: #cc1b1b;
-    font-size: 13px !important
-  }
-  .navbar__cart-close {
-    margin-left: auto;
-    order: 2;
-  }
-  .navbar__cart-button {
-    background-color: #4E363F;
-    cursor: pointer;
-    width: 100%;
-    border: 1px solid #4E363F;
-    color: white;
-    margin-bottom: 0px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  .navbar__cart-container{ 
-    overflow-y: scroll;
-    height: 240px;
-  }
-  .navbar__cart-item{
-    display: flex;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-bottom: 0.5px solid #ececec
-  }
-  .navbar__cart > div{
-    width: 250px;
-    transform: translate3d(-205px, 35px, 0px) !important;
-    font-size: 15px
-  }
-  .navbar__custom-item-img {
-    width: 50px;
-    height: 50px;
-  }
-  .navbar__custom i {
-    font-size: 25px
-  }
-  .navbar__custom a {
-    color: black
-  }
-  .navbar__custom {
-    position: absolute;
-    top: 20px;
-    z-index: 1000;
-    width: 100%;
-  }
-  .navbar__custom-menu { 
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    font-size: 15px
-  }
-</style>
 
 <script>
 import axios from 'axios'

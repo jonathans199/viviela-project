@@ -1,53 +1,69 @@
 <template>
   <div>
-    <!-- home page starts  -->
     <Header/>
     <div id="carouselExampleIndicators" class="carousel slide custom-slide" data-ride="carousel">
       <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
       </ol>
       <div class="carousel-inner">
-          <div class="carousel-item active">
-          <img class="d-block w-100" src="@/assets/img/slide1.jpg" alt="First slide">
-              <div class="carousel-caption d-none d-md-block">
-                  <div class="carousel-caption__slide-num">02_</div>
-                  <div class="carousel-caption__slide-heading">OUMEZINE</div>
-                  <div class="carousel-caption__slide-sub-heading">MARCH 2018</div>
-              </div>
-          </div>
-          <!-- <div class="carousel-item">
-          <img class="d-block w-100" src="@/assets/img/slide2.jpg" alt="Second slide">
-          <div class="carousel-caption d-none d-md-block">
-                  <div class="carousel-caption__slide-num">03_</div>
-                  <div class="carousel-caption__slide-heading">OUMEZINE</div>
-                  <div class="carousel-caption__slide-sub-heading">MARCH 2018</div>
-              </div>
-          </div> -->
-
+          <div class="carousel-item active slide1"></div>
+          <div class="carousel-item slide2"></div>
+          <div class="carousel-item slide3"></div>
+          <div class="carousel-item slide4"></div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-      </a>
     </div>
 
-    <!-- home page finish -->
+    <section class="about">
+      <h1>WHAT ARE WE</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut fugit illo officia et obcaecati non!</p>
+    </section>
+
+    <section class="divider1">
+    </section>
+
     <Shop/>
+    
+    <section class="teaser">
+      <h1>TEASER VIVIELA</h1>
+    </section>
 
-    <!-- <section class="men-shoes">
-      <div class="container men-shoes-content">
-        <img class="" src="@/assets/img/viviela_logo300px.png" alt="">
-        <h3>FOR MEN</h3>
-        <button class="btn vv-button">SHOP MORE</button>
+    <section class="teaser-video">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/izQgy2OlHsg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </section>
+
+    <section class="blog-container">
+      <h1>BLOG</h1>
+      <div class="blog">
+        <div class="blog-post">
+          <img src="../assets/img/blog-post1.jpg" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam temporibus corrupti nesciunt doloremque atque modi, earum nemo, possimus odit sit fugiat. Minima reiciendis nihil ab enim voluptas rem nisi tempora.</p>
+          <a href="#">View more</a>
+        </div>
+        <div class="blog-post">
+          <img src="../assets/img/blog-post1.jpg" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam temporibus corrupti nesciunt doloremque atque modi, earum nemo, possimus odit sit fugiat. Minima reiciendis nihil ab enim voluptas rem nisi tempora.</p>
+          <a href="#">View more</a>
+        </div>
+        <div class="blog-post">
+          <img src="../assets/img/blog-post1.jpg" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam temporibus corrupti nesciunt doloremque atque modi, earum nemo, possimus odit sit fugiat. Minima reiciendis nihil ab enim voluptas rem nisi tempora.</p>
+          <a href="#">View more</a>
+        </div>
+        <div class="blog-post">
+          <img src="../assets/img/blog-post1.jpg" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam temporibus corrupti nesciunt doloremque atque modi, earum nemo, possimus odit sit fugiat. Minima reiciendis nihil ab enim voluptas rem nisi tempora.</p>
+          <a href="#">View more</a>
+        </div>
       </div>
-    </section> -->
-
+       <button class="vv-button">READ MORE</button>
+      <span>INFO@VIVIELA.COM / MIAMI, FL</span>
+    </section>
+    <div class="banner3">
+      <h1>FASHION TV EVENT</h1>
+    </div>
     <Contact/>
     <Footer/>
   </div>
@@ -70,9 +86,6 @@ export default {
     Contact,
     Shop
   },
-  
-
 }
-
 
 </script>

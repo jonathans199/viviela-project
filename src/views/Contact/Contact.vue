@@ -1,11 +1,15 @@
 <template>
   <section class="contact__container">
       <div class="col-12 col-md-6">
-        <img src="@/assets/img/contact.png" class="img-fluid" alt="">
+        <img src="@/assets/img/contact_shoe.jpg" class="img-fluid" alt="">
       </div>
       <div class="col-12 col-md-6 contact_form"> 
         <div class="container row">
-          <h2 class="col-12 text-center mb-5">CONTACT US</h2>
+          <h1 class="col-12 text-center mb-5">CONTACT US</h1>
+          <button class="vv-button col-6">FACEBOOK</button>
+          <button class="vv-button col-6">GOOGLE</button>
+          <span class="col-12 text-center my-5">or</span>
+          <h1 class="col-12 text-center mb-5">STAY IN TOUCH</h1>
           <b-form-group class="col-6 contact__form-group "  label-for="elementsAppend" >
             <b-input-group>
               <b-form-input placeholder="EMAIL"  type="text" ></b-form-input>
@@ -78,7 +82,7 @@
   }
   .contact__container {
     margin-bottom: 0px;
-    background-color: #f4f2f1;
+    background-color: #ECECEC;
     display: flex;
     flex-direction: row
   }
