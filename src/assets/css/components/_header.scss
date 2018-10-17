@@ -57,15 +57,26 @@ header {
     color: black
   }
   .navbar__custom {
+    // display: flex;
+    // justify-content: center;
+
     position: absolute;
     top: 20px;
     z-index: 1000;
     width: 100%;
   }
-  .navbar__custom-menu { 
+  // .navbar__custom-menu { 
+  //   display: flex;
+  //   width: 100%;
+  //   justify-content: space-evenly;
+  //   font-size: 15px
+  // }
+
+  .menu {
     display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    font-size: 15px
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 2rem;
   }
   
