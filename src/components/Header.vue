@@ -6,6 +6,7 @@
         <div class="overlay-content">
           <router-link to="/about">About</router-link>
           <router-link to="/">Contact</router-link>
+          <router-link to="/profile">myProfile</router-link>
         </div>
       </div>
       
