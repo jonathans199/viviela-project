@@ -1,22 +1,20 @@
 <template>
   <footer class="footer__container">
-    <div class="container">
-      <div class="row">
-        <div class="col-2 d-flex justify-content-center align-items-center">
-          <img class="footer-logo" src="@/assets/img/viviela_logo300px.png" alt="">
-        </div>
-        <div class="col-8">
-          <ul>
-            <li>ABOUT</li>
-            <li>SHOP</li>
-            <li>COLLECTIONS</li>
-          </ul>
-        </div>
-        <div class="col-2 d-flex justify-content-center align-items-center">
-          <span class="mr-4"><i class="fa fa-facebook-square" /></span>
-          <span class="mr-4"><i class="fa fa-instagram" /></span>
-          <span><i class="fa fa-twitter-square" /></span>
-        </div>
+    <div class="row col-12">
+      <div class="col-2 d-flex justify-content-center align-items-center">
+        <img class="footer-logo" src="@/assets/img/viviela_logo300px.png" alt="">
+      </div>
+      <div class="col-8">
+        <ul>
+          <li>ABOUT</li>
+          <li>SHOP</li>
+          <li>COLLECTIONS</li>
+        </ul>
+      </div>
+      <div class="col-2 d-flex justify-content-center align-items-center">
+        <span class="mr-4"><i class="fa fa-facebook-square" /></span>
+        <span class="mr-4"><i class="fa fa-instagram" /></span>
+        <span><i class="fa fa-twitter-square" /></span>
       </div>
     </div>
   </footer>

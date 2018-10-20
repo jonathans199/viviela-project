@@ -1,9 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import BootstrapVue from 'bootstrap-vue'
+
 
 Vue.config.productionTip = false
-export const serverBus = new Vue();
+export const serverBus = new Vue()
+
+Vue.use(BootstrapVue)
 
 new Vue({
   router,

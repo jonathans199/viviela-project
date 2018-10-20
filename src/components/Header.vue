@@ -4,9 +4,9 @@
       <div id="myNav" class="overlay">
           <a href="javascript:void(0)" class="closebtn" @click="closeNav()">&times;</a>
         <div class="overlay-content">
-          <router-link to="/about">About</router-link>
-          <router-link to="/">Contact</router-link>
-          <router-link to="/profile">myProfile</router-link>
+          <router-link to="/">Home</router-link>
+          <router-link to="/products">Products</router-link>
+          <router-link to="/profile">My Profile</router-link>
         </div>
       </div>
       
@@ -44,10 +44,11 @@
                     <i class="fa fa-times"></i>
                   </a>
                 </span>
-                <!-- <b-dropdown-divider></b-dropdown-divider> -->
               </li>
             </ul>
-            <button class="navbar__cart-button">CHECKOUT</button>
+            <router-link tag="button" to="/checkout" class="navbar__cart-button">
+              CHECKOUT
+            </router-link>
           </b-dropdown>
           </div>
       </div>
@@ -178,6 +179,7 @@ export default {
 }
 
  .menu__button {
+    cursor: pointer;
     padding-left: 2rem;
 }
 
