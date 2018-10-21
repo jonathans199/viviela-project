@@ -4,9 +4,34 @@
       <div id="myNav" class="overlay">
           <a href="javascript:void(0)" class="closebtn" @click="closeNav()">&times;</a>
         <div class="overlay-content">
-          <router-link to="/about">About</router-link>
-          <router-link to="/">Contact</router-link>
-          <router-link to="/profile">myProfile</router-link>
+          <div class="shop_menu">
+            <h2>SHOP</h2>
+            <router-link to="/about">ON SALE</router-link>
+            <router-link to="/about">ORIGINAL</router-link>
+            <router-link to="/about">ORDER</router-link>
+          </div>
+          <div class="shop_menu">
+            <h2>COLLECTIONS</h2>
+            <router-link to="/about">CURRENT</router-link>
+            <router-link to="/about">PREVIOUS</router-link>
+          </div>
+          <div class="shop_menu">
+            <h2>PRESS</h2>
+            <router-link to="/about">BLOG</router-link>
+            <router-link to="/about">EVENTS</router-link>
+            <router-link to="/about">MEDIA KIT</router-link>
+            <router-link to="/about">FASHION SHOWS</router-link>
+            <router-link to="/about">DOWNLOADS</router-link>
+          </div>
+          <div class="shop_menu">
+            <h2>ABOUT</h2>
+            <router-link to="/">LOCATION</router-link>
+            <router-link to="/">ABOUT VIVIELA</router-link>
+          </div>
+          
+        </div>
+        <div class="footer-menu">
+          <a href="/">INFO@VIVIELA.COM / MIAMI, FL</a>
         </div>
       </div>
       
@@ -135,34 +160,47 @@ export default {
     height: 0%;
     width: 100%;
     position: fixed;
+
     z-index: 999;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background: rgba(0,0,0, 0.9) url('../assets/img/viviela-v.png') no-repeat fixed center;
     overflow-x: hidden;
     transition: 0.5s;
 }
 
 	.overlay-content {
     position: relative;
+    display: flex;
+    justify-content: space-around;
+
     top: 25%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
 }
 
+  .overlay-content h2 {
+    color: #f1f1f1;
+    text-align: left;
+    font-weight: 800;
+  }
+
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
-    color: #818181;
+    font-size: 1.5rem;
+    color: #f1f1f1;
     display: block;
     transition: 0.3s;
+
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: .5rem;
 }
 
 .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: #595959;
 }
 
 .overlay .closebtn {
@@ -185,4 +223,8 @@ export default {
     width: 1.5rem;
     margin: 0 !important;
 }
+
+  .footer-menu {
+    bottom: 0;
+  }
 </style>

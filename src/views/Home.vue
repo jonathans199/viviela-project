@@ -34,7 +34,7 @@
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/izQgy2OlHsg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </section>
 
-    <section class="blog-container">
+    <!-- <section class="blog-container">
       <h1>BLOG</h1>
       <div class="blog">
         <div class="blog-post">
@@ -60,7 +60,8 @@
       </div>
        <button class="vv-button">READ MORE</button>
       <span>INFO@VIVIELA.COM / MIAMI, FL</span>
-    </section>
+    </section> -->
+
     <div class="banner3">
       <h1>FASHION TV EVENT</h1>
     </div>
