@@ -2,7 +2,7 @@
   <div>
     <nav class="navbar__custom">
       <div id="myNav" class="overlay">
-          <a href="javascript:void(0)" class="closebtn" @click="closeNav()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" @click="closeNav()">&times;</a>
         <div class="overlay-content">
           <div class="shop_menu">
             <h2>SHOP</h2>

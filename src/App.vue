@@ -8,6 +8,7 @@
 
 @import '@/../assets/css/main.scss';
 
+
 </style>
 
 <script>
@@ -16,6 +17,7 @@ import Toasted from 'vue-toasted'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import '@/assets/line-awesome/css/line-awesome-font-awesome.min.css'
 
 import config from '@/config/settings'
 
