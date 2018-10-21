@@ -32,6 +32,9 @@
         </div>
         <div class="footer-menu">
           <a href="/">INFO@VIVIELA.COM / MIAMI, FL</a>
+          <router-link to="/">Home</router-link>
+          <router-link to="/products">Products</router-link>
+          <router-link to="/profile">My Profile</router-link>
         </div>
       </div>
       
@@ -69,10 +72,11 @@
                     <i class="fa fa-times"></i>
                   </a>
                 </span>
-                <!-- <b-dropdown-divider></b-dropdown-divider> -->
               </li>
             </ul>
-            <button class="navbar__cart-button">CHECKOUT</button>
+            <router-link tag="button" to="/checkout" class="navbar__cart-button">
+              CHECKOUT
+            </router-link>
           </b-dropdown>
           </div>
       </div>
@@ -216,6 +220,7 @@ export default {
 }
 
  .menu__button {
+    cursor: pointer;
     padding-left: 2rem;
 }
 
