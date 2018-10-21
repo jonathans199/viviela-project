@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import Checkout from '@/views/Checkout.vue'
+import Checkout from '@/views/Checkout/Checkout.vue'
 import About from '@/views/About.vue'
 import Profile from '@/views/Profile.vue'
 
